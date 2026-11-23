@@ -1,0 +1,104 @@
+COMPLETE SETUP GUIDE FOR TEAMMATES
+1. Extract ZIP
+
+Extract project anywhere.
+
+Example:
+
+Desktop/
+└── Internship_project_blog_writing_agent/
+2. Open Terminal
+
+Open terminal inside project folder.
+
+Windows
+
+Open folder → Right Click →
+“Open in Terminal”
+
+OR:
+
+cd path_to_project
+3. Create Virtual Environment
+
+Run:
+
+python -m venv venv
+4. Activate Virtual Environment
+Windows
+venv\Scripts\activate
+Mac/Linux
+source venv/bin/activate
+
+After activation they should see:
+
+(venv)
+
+in terminal.
+
+5. Install Requirements
+
+Run:
+
+pip install -r requirements.txt
+
+Wait until installation finishes.
+
+6. Create .env File
+
+Inside project root create:
+
+.env
+
+Add:
+
+GROQ_API_KEY=your_groq_api_key
+TAVILY_API_KEY=your_tavily_api_key
+7. Get API Keys
+GROQ API Key
+
+Go to:
+
+Groq Console
+
+Login
+Create API Key
+Copy key into .env
+Tavily API Key
+
+Go to:
+
+Tavily
+
+Signup/Login
+Create API Key
+Copy into .env
+8. Run Project
+
+Run:
+
+streamlit run bwa_frontend.py
+9. Browser Opens Automatically
+
+Usually:
+
+http://localhost:8501
+
+If not, manually open it.
+
+10. Test Prompt
+
+Example:
+
+Artificial General Intelligence in Future
+
+Then click Generate.
+
+11. Expected Output
+
+The app:
+
+performs research
+generates blog
+attaches image
+generates markdown output
